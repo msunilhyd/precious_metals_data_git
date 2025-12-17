@@ -1,0 +1,2248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart" />
+	<title>Gold Prices - 100 Year Historical Chart</title>
+	
+	<link rel="icon" type="image/x-icon" href="/production/global_metrics/images/macrotrends-favicon-96.png">	
+	<meta name="description" content="Interactive chart of historical data for real (inflation-adjusted) gold prices per ounce back to 1915. The series is deflated using the headline Consumer Price Index (CPI) with the most recent month as the base. The current month is updated on an hourly basis with today&#039;s latest value. " />
+
+	
+    <!-- Bootstrap -->
+    <link href="/production/assets/css/bootstrap_538.min.css" rel="stylesheet">
+	
+	
+		
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "WebPage",
+		  "name": "Gold Prices - 100 Year Historical Chart",
+		  "description": "Interactive chart of historical data for real (inflation-adjusted) gold prices per ounce back to 1915. The series is deflated using the headline Consumer Price Index (CPI) with the most recent month as the base. The current month is updated on an hourly basis with today&#039;s latest value. ",
+		  "url": "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart"
+		}
+		</script>			
+	
+	
+
+	
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		if (window.innerWidth >= 992) { // Only run on desktop (≥ 992px)
+			
+			// Ensure InvestingChannelQueue is initialized
+			window.InvestingChannelQueue = window.InvestingChannelQueue || [];
+
+			// Load InvestingChannel script dynamically
+			var icScript = document.createElement("script");
+			icScript.async = true;
+			icScript.src = "https://u5.investingchannel.com/static/uat.js";
+			document.body.appendChild(icScript);
+
+			// Run InvestingChannel UAT script after the main script loads
+			icScript.onload = function () {
+				InvestingChannelQueue.push(function () {
+					InvestingChannel.UAT.Run("df17ac1e-cc7f-11e8-82a5-0abbb61c4a6a");
+				});
+			};
+		}
+	});
+	</script>	
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KL0LYERBH"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-3KL0LYERBH');
+	</script>		
+	
+
+	
+	<style>
+	
+		/* Regular 400 - latin */
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 400;
+		  font-display: swap;
+		  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+
+		/* Bold 700 - latin */
+		@font-face {
+		  font-family: 'Roboto';
+		  font-style: normal;
+		  font-weight: 700;
+		  font-display: swap;
+		  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+		  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+        
+		.sticky_fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+		}		
+
+		.list-group-section {
+
+			font-weight:bold;
+			text-align:center;
+			border-bottom:1px solid #dfdfdf;
+			background-color: #dfdfdf;
+			
+			}
+
+		/* Optional: Style for focus and hover states */
+		.btn-clear:focus {
+			outline: none;
+		}			
+				
+		#more {display: none;}		
+
+		
+		html,body {
+			overflow-x: hidden !important;
+		}
+		
+		body{
+			font-family: 'Roboto';
+			color: #444; 
+			margin:0px;
+			background-color: #fff;
+		}
+			
+        /* Ensure main content maxes out at 1000px */
+        .main-content {
+            max-width: 1000px;
+            width: 100%;
+			padding:0px;
+			  flex: 1 1 0;
+			  min-width: 0;
+        }
+		
+
+        /* Sidebar stays exactly 340px */
+        .sidebar-container {
+            min-width: 340px;
+        }
+
+        /* Ad Unit Styling */
+        .ad-unit {
+            background: #ccc;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px auto;
+        }
+
+		#leaderboardTag {
+			height: 280px; /* Ensure it has a fixed height */
+			margin-top: 30px;
+		}
+
+		/* Hide on mobile */
+		@media (max-width: 767px) {
+			#leaderboardTag {
+				display: none;
+			}
+		}
+
+		/* Keep space but hide content on desktop */
+		@media (min-width: 768px) {
+			#leaderboardTag {
+				visibility: hidden;
+			}
+		}
+
+        .ad-728x90 {
+            width: 728px;
+            height: 90px;
+        }
+
+        /* Header & Footer Background Color */
+        .header, .footer {
+            background-color: #444 !important;
+        }
+
+        /* Footer styling */
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-nav li {
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+	
+
+			#mobile-content {
+				
+				margin:0px;
+				padding:0px;
+			}
+
+			h1 {
+				
+				font-size: 24px;
+				
+			}
+				
+			#searchResultsTickers {
+				font-size: 16px;
+				max-height:250px;
+				overflow-y: auto;
+				position: absolute;
+				z-index: 1000;
+				background-color: #ffffff;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			}
+
+			#searchResultsMetrics {
+				font-size: 16px;
+				max-height: 250px;
+				overflow-y: auto;
+				position: absolute;
+				z-index: 1000;
+				background-color: #ffffff;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			}
+			
+			.btn-clear {
+				position: absolute;
+				top: 50%;
+				right: -4px;
+				transform: translateY(-50%);
+				border: none;
+				background: transparent;
+				cursor: pointer;
+				font-size:26px;
+				color:#000;
+			}
+			
+			div#mobile-scrollmenu {
+				border: 1px solid #dfdfdf;
+				background-color:#F8F8F8;
+				overflow-x: scroll;
+				white-space: nowrap;
+				-ms-overflow-style: none;  /* IE and Edge */
+				scrollbar-width: none;  /* Firefox */	
+				margin-bottom:10px;
+				margin-left:10px;
+				margin-right:10px;
+				border-radius: 5px;
+				scroll-padding-left: 100px;
+
+			}
+
+			/* Remove the scrollbar for webkit browsers as well */
+			div#mobile-scrollmenu::-webkit-scrollbar {
+				display: none;
+			}
+
+			div#mobile-scrollmenu a {
+				display: inline-block;
+				font-size:13px;
+				font-weight:600;
+				color: #337ab7;
+				text-align: center;
+				padding: 8px 12px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+
+			div#mobile-scrollmenu a:hover {
+				text-decoration:underline;
+			}
+
+			div#mobile-scrollmenusub {
+				border: 1px solid #dfdfdf;
+				background-color:#F8F8F8;
+				overflow-x: scroll;
+				white-space: nowrap;
+				-ms-overflow-style: none;  /* IE and Edge */
+				scrollbar-width: none;  /* Firefox */	
+				margin-bottom:10px;
+				margin-left:10px;
+				margin-right:10px;
+				border-radius: 5px;
+				scroll-padding-left: 100px;
+
+			}
+
+
+			/* Remove the scrollbar for webkit browsers as well */
+			div#mobile-scrollmenusub::-webkit-scrollbar {
+				display: none;
+			}
+
+			div#mobile-scrollmenusub a {
+				display: inline-block;
+				font-size:13px;
+				font-weight:600;
+				color: #337ab7;
+				text-align: center;
+				padding: 8px 12px;
+				border-radius: 5px;
+				text-decoration: none;
+			}
+
+			div#mobile-scrollmenusub a:hover {
+				text-decoration:underline;
+			}			
+			
+			.topnav a:not(:first-child), .dropdown .dropbtn {
+			display: none;
+			}
+			
+			.topnav a.icon {
+			float: right;
+			display: block;
+			font-size:30px;
+			}
+
+			.topnav.responsive {position: relative;}
+			.topnav.responsive a.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+			}
+			.topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+			}
+			.topnav.responsive .dropdown {float: none;}
+			.topnav.responsive .dropdown-content {position: relative;}
+			.topnav.responsive .dropdown .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: left;
+			}
+			
+			.mobile-description {
+				text-align: left;
+				text-justify: auto;
+				padding:10px;
+				margin: 20px 10px;
+				background-color:#fff;
+				border: 1px solid #dfdfdf;
+				border-radius:8px;
+
+			}
+
+			/* Default: for tablets, laptops, desktops */
+			#description-wrapper {
+				max-height: none;
+				overflow: visible;
+				padding: 10px;
+				transition: max-height 0.3s ease;
+			}
+
+			#description-wrapper.expanded {
+				max-height: none;
+			}
+
+			/* Hide toggle button by default (for larger screens) */
+			#toggle-button {
+				display: none;
+				margin: 10px;
+				padding: 5px 10px;
+				background-color: #337ab7;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+
+			#toggle-button:hover {
+				background-color: #337ab7;
+			}
+
+			/* Mobile-only adjustments */
+			@media (max-width: 767px) {
+				#description-wrapper {
+					max-height: 150px;
+					overflow: hidden;
+					padding: 10px; /* Keep padding on mobile too */
+				}
+
+				#description-wrapper.expanded {
+					max-height: none;
+				}
+
+				#toggle-button {
+					display: inline-block;
+				}
+			}
+			
+
+			
+			#chart-list-mobile {
+				
+				display: flex;
+				flex-direction: column;
+				
+			}
+			
+
+			.chart_panel {
+				flex: 1;
+				margin: 10px;
+				background-color:#fff;
+				border: 1px solid #dfdfdf;
+				border-radius:8px;
+			}
+			
+			.chart_panel_header {
+				
+				display: flex;
+				justify-content: space-between;
+				width:100%;
+				background-color:#f8f8f8;
+				border-bottom: 1px solid #dfdfdf;
+				border-top-left-radius:8px;
+				border-top-right-radius:8px;
+				padding:5px 15px;
+				margin-bottom:0px;
+				
+			}
+			
+			.chart_title {
+				
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 20px;
+				font-weight:bold;
+				margin-bottom:0px;
+				
+			}
+			
+			.chart_tabs {
+				
+				display: flex;
+				align-items: center;				
+				font-size: 12px;
+				font-weight:bold;
+				
+			}
+
+			.tab1 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				padding: 8px 15px;
+				margin: 5px 0px 5px 10px;
+				border-top-left-radius:6px;
+				border-bottom-left-radius:6px;
+				background-color: white;
+				border: 1px solid #ddd;
+				border-right: none;
+				flex-grow: 1;
+			}
+			
+			.tab2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				padding: 8px 15px;
+				margin: 5px 10px 5px 0px;
+				border-top-right-radius:6px;
+				border-bottom-right-radius:6px;
+				background-color: white;
+				border: 1px solid #ddd;
+				margin-right: 5px;
+				flex-grow: 1;
+			}			
+			
+			.tab_images {
+				
+				width:15px;
+				fill: #dfdfdf;				
+				
+			}
+
+			/* Lighter gray background on hover */
+			.tab:hover {
+				background-color: #efefef; /* Even lighter gray */
+			}
+
+			.active-tab {
+				background-color: #efefef;
+			}		
+
+			.chart_block {
+				display: flex;
+				justify-content: center;
+				height: 600px; /* Default height for larger screens */
+				padding: 20px;
+				margin: 0px;
+				background-color: #fff;
+				border-radius: 8px;
+				touch-action: manipulation; /* Next three settings are to improve chart behavior on mobile */
+				user-select: none;
+				-webkit-user-select: none;
+			}
+
+			/* Adjust height to 400px for screens smaller than 768px (mobile) */
+			@media (max-width: 767px) {
+				.chart_block {
+					height: 450px;
+					padding: 5px;
+				}
+			}
+
+			.table_block {
+				display: none;
+				text-align: center;
+				height: 600px;
+				margin:0px;
+				padding:20px;
+				background-color:#fff;
+				border-radius:8px;
+				overflow: auto;
+			}
+
+			/* Adjust height to 400px for screens smaller than 768px (mobile) */
+			@media (max-width: 767px) {
+				.table_block {
+					height: 450px;
+				}
+			}			
+			
+			.ad_block_leaderboard{
+				display: flex;
+				justify-content: center;
+				height: 350px;				
+				padding: 20px;
+				background-color:#fff;				
+			}
+
+			.ad_block_dianomi{
+				justify-content: center;
+				height: 240px;
+				margin: 20px 30px;			
+				background-color:#fff;
+				top:0px;				
+			}
+			
+			/* Adjust Dianomi ad block height for laptop and desktop screens */
+			@media (min-width: 768px) {
+				.ad_block_dianomi {
+					justify-content: center;
+					height: 175px;
+					margin: 20px 30px;			
+					background-color:#fff;
+					top:0px;				
+				}				
+			}			
+
+			.ad_block_ic{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				height: 250px;				
+				margin: 10px auto;	
+				padding-top:0px;
+				background-color:#fff;
+				top:0px;
+			}
+					
+			.related_charts_container {
+				min-height: 400px;
+				display: flex;
+				justify-content: center;  /* Center horizontally */
+				align-items: center;      /* Optional: vertical centering */
+				width: 100%;
+			}
+
+			.related_charts_block {
+				text-align: left;
+				padding: 10px 30px 30px 30px;
+				margin: 30px 10px 60px 10px;
+				background-color: #fff;
+				border: 1px solid #dfdfdf;
+				border-radius: 8px;
+				width: 100%;              /* Full width by default */
+			}
+
+			/* Desktop only: constrain width */
+			@media (min-width: 768px) {
+				.related_charts_block {
+					max-width: 600px;
+				}
+			}
+
+			.historical_data_table {
+			  width: 100%;
+			  border-collapse: collapse;
+			  margin-bottom: 0;
+			}
+
+			.historical_data_table th,
+			.historical_data_table td {
+			  padding: 10px;
+			  font-size: 16px;
+			  text-align: left;
+			}
+
+			.historical_data_table th {
+			  font-weight: bold;
+			  background-color: #f8f8f8;
+			  border-bottom: 1px solid #dfdfdf;
+			}
+
+			.historical_data_table tr:nth-child(even) {
+			  background-color: #f9f9f9;
+			}
+
+			
+			
+
+	</style>
+	
+</head>
+<body>
+
+
+    <!-- Header with Responsive Navbar -->
+    <header class="header text-white px-3">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+			<a class="logo" href="/" title="MacroTrends Home Page"><img alt="Macrotrends Logo" width="193" height="30" src="/assets/images/logo_bright1.png"/></a>		
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>	
+
+	<div id="leaderboardTag" class="col-xs-12"></div>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		if (window.innerWidth < 1024) {
+			document.getElementById("leaderboardTag")?.remove();
+			return;
+		}
+
+		const leaderboardDiv = document.getElementById("leaderboardTag");
+		if (!leaderboardDiv) return;
+
+		// Show immediately
+		leaderboardDiv.style.visibility = "visible";
+
+		// Create context div
+		const contextDiv = document.createElement("div");
+		contextDiv.className = "dianomi_context";
+		contextDiv.setAttribute("data-dianomi-context-id", "468");
+		leaderboardDiv.appendChild(contextDiv);
+
+		// Load Dianomi script
+		const script = document.createElement("script");
+		script.async = true;
+		script.src = "https://www.dianomi.com/js/contextfeed.js";
+		document.body.appendChild(script);
+	});
+
+	</script>
+
+
+
+
+    <!-- Main Layout -->
+    <div class="container-fluid mt-3">
+        <div class="row justify-content-center">
+            
+            <!-- Wrapping div to keep content + sidebar aligned -->
+			<div class="d-flex flex-column flex-lg-row align-items-start mx-auto" style="max-width: 1340px; padding: 0 10px;">
+                <!-- Main Content -->
+                <div class="main-content flex-grow-1">
+				
+					<div id="mobile-content" class="flex-grow-1">
+						
+						<!--<div style="width:300px;height:20px;margin:30px auto; background-color:#fff;"></div>-->
+						
+						
+						
+						<div style="margin:30px 15px 20px 15px;">
+						
+							<h2 style="margin-left:0px; font-weight:600; color:#444;">Gold Prices - 100 Year Historical Chart</h2>
+						
+						</div>		
+							
+
+						<div id="scrollbar">
+
+						<div id="mobile-scrollmenu">
+								
+									
+									<a id="mobile-tab1" href="/1319/dow-jones-100-year-historical-chart">Markets</a>
+
+
+								
+									
+									<a id="mobile-tab2" href="/1333/historical-gold-prices-100-year-chart">Metals</a>
+
+
+								
+									
+									<a id="mobile-tab3" href="/1369/crude-oil-price-history-chart">Energy</a>
+
+
+								
+									
+									<a id="mobile-tab4" href="/2532/corn-prices-historical-chart-data">Commodities</a>
+
+
+								
+									
+									<a id="mobile-tab5" href="/2016/10-year-treasury-bond-rate-yield-chart">Interest Rates</a>
+
+
+								
+									
+									<a id="mobile-tab6" href="/2548/euro-dollar-exchange-rate-historical-chart">Exchange Rates</a>
+
+
+								
+									
+									<a id="mobile-tab7" href="/2497/historical-inflation-rate-by-year">Economy</a>
+
+
+								
+							</div>
+
+
+															<div id="mobile-scrollmenusub">
+
+																													<a id="mobile-historical-gold-prices-100-year-chart" href="/1333/historical-gold-prices-100-year-chart">Gold 100Y</a>
+																													<a id="mobile-gold-price-last-ten-years" href="/2627/gold-price-last-ten-years">Gold Daily</a>
+																													<a id="mobile-historical-silver-prices-100-year-chart" href="/1470/historical-silver-prices-100-year-chart">Silver 100Y</a>
+																													<a id="mobile-silver-price-last-ten-years" href="/2628/silver-price-last-ten-years">Silver Daily</a>
+																													<a id="mobile-platinum-prices-historical-chart-data" href="/2540/platinum-prices-historical-chart-data">Platinum</a>
+																													<a id="mobile-copper-prices-historical-chart-data" href="/1476/copper-prices-historical-chart-data">Copper</a>
+									
+								</div>
+							
+							
+						</div>			
+						
+						<!--<div class="lazyload ad_block"><iframe id="dianomi_leaderboard" WIDTH="100%" HEIGHT="350"  frameBorder="0" src="//www.dianomi.com/smartads.epl?id=4058"></iframe></div><br>-->
+
+						<div class="mobile-description">
+						
+
+							<div class="description-wrapper" id="description-wrapper">
+								<div class="description-content">
+									<span style="color:#444; line-height: 1.8;">Interactive chart of historical data for real (inflation-adjusted) gold prices per ounce back to 1915. The series is deflated using the headline Consumer Price Index (CPI) with the most recent month as the base. The current month is updated on an hourly basis with today's latest value.  The full historical dataset is available for download here: <a style='color:#337ab7' href='https://www.macrotrends.net/datasets/1333/historical-gold-prices-100-year-chart'>Gold Prices - 100 Years of Historical Data</a>.</span>
+								</div>
+							</div>
+
+							<div class="gradient-overlay d-flex justify-content-center align-items-center">
+								<button id="toggle-button" class="btn btn-primary" onclick="toggleContent()">View More</button>
+							</div>
+			
+							
+						</div>
+						
+							
+						<div class="ad_block_dianomi d-lg-none">
+						
+							<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js" async></script>
+							<div class="dianomi_context" data-dianomi-context-id="2234"></div>	
+							
+						</div>	
+						
+						<div class="container text-center d-none d-lg-block" style="min-height:100px;">
+							<!-- 728x90 Ad Unit -->
+									<div id="IC_d_728x90_1" style="margin:20px 20px; min-height:90px;"></div>
+						</div>						
+
+							<div id="chart-list-mobile">
+							
+							
+							
+							</div>
+							
+							
+							
+					</div>
+					
+
+
+
+
+
+
+					<script>
+					window.relatedPages = [];
+					</script>
+
+
+
+				<div id="related-pages" style="min-height: 100px;"></div>
+					
+                
+				</div>
+
+			<!-- Right Sidebar (Only on Desktop) -->
+			<div class="d-none d-lg-block sidebar-container bg-white text-dark" style="margin-top:70px; width: 320px;">
+
+				<div style="margin-top:0px; margin-bottom:0px; min-height:260px;">
+					<div id="IC_d_300x250_1"></div>
+				</div>
+				
+				<!-- Sticky Ad Container -->
+				<div class="stickyContainer" style="position: sticky; top: 20px; width:320px;">
+					
+					<!-- Dianomi Ad Parent Div -->
+					<div id="dianomiParent" style="margin-top:30px; min-height:750px;">
+						
+						<!-- Pre-created divs for Dianomi Ads -->
+						<div id="dianomiCustomAd" class="dianomi_context" data-dianomi-context-id="470"></div>
+
+						<div id="IC_d_300x250_2"></div>
+					</div>
+
+				</div>
+
+				<script>
+				document.addEventListener("DOMContentLoaded", function () {
+				  if (window.innerWidth >= 1024) { // Only run on desktop (≥768px)
+					// IDs of the two ad divs
+					var adUnitIds = ['dianomiCustomAd'];
+
+					adUnitIds.forEach(function(id) {
+					  var adDiv = document.getElementById(id);
+					  if (adDiv) {
+						// Create and append the Dianomi script for each div
+						var dianomiScript = document.createElement("script");
+						dianomiScript.type = "text/javascript";
+						dianomiScript.src = "https://www.dianomi.com/js/contextfeed.js";
+						adDiv.appendChild(dianomiScript);
+					  }
+					});
+				  }
+				});
+				</script>
+
+
+			</div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+	
+	<!--This is the div for the IC OOP ad-->
+	<div id="IC_d_OOP_1" style="width:1px;height:1px;"></div>
+
+
+    <!-- Footer with Responsive Navigation -->
+    <footer class="footer text-white text-center py-3 mt-3 px-3">
+        <ul class="footer-nav">
+			<li><span>&copy; 2010-2025 Macrotrends LLC</span></li>
+            <li><a class="text-white" href="/privacy">Privacy Policy</a></li>
+            <li><a class="text-white" href="/terms">Terms of Service</a></li>
+
+        </ul>
+    </footer>
+	
+    <script>
+
+//Prevents the show more button from displaying if not needed	
+document.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.getElementById('description-wrapper');
+    const button = document.getElementById('toggle-button');
+
+    // Hide the button if the content isn't overflowing
+    if (wrapper.scrollHeight <= wrapper.clientHeight + 1) {
+        button.style.display = 'none';
+    }
+});
+	
+
+//Function for rendering the related pages table without blocking
+function renderRelatedPages() {
+  var related = window.relatedPages;
+  if (!related || !related.length) return;
+
+  var container = document.getElementById('related-pages');
+  if (!container) return;
+
+  var html = '';
+  html += '<div class="related_charts_container" style="margin-bottom: 0px;">';
+  html += '<div class="related_charts_block" style="background-color:#fff; margin: 30px 10px; padding:10px;">';
+  html += '<table class="historical_data_table table table-striped">';
+  html += '<thead><tr><th style="text-align:center;">Related Charts</th></tr></thead>';
+  html += '<tbody>';
+
+  for (var i = 0; i < related.length; i++) {
+    var page = related[i];
+    var id = encodeURIComponent(page.id);
+    var slug = encodeURIComponent(page.slug);
+    var title = page.title || "";
+
+    // Remove anything after the first " - "
+    var displayTitle = title;
+
+    var url = '/' + id + '/' + slug;
+    html += '<tr><td><a href="' + url + '">' + displayTitle + '</a></td></tr>';
+  }
+
+  html += '</tbody>';
+  html += '</table></div></div>';
+
+  container.innerHTML = html;
+}
+
+
+
+function runWhenIdleOrReady(callback) {
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(callback);
+    } else {
+      setTimeout(callback, 0);
+    }
+  } else {
+    window.addEventListener('DOMContentLoaded', function () {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(callback);
+      } else {
+        setTimeout(callback, 0);
+      }
+    });
+  }
+}
+
+runWhenIdleOrReady(renderRelatedPages);
+
+
+	
+//Make the right sidebar sticky on scroll
+document.addEventListener('DOMContentLoaded', function () {
+  // Only run on desktops (>=768px)
+  if (window.innerWidth < 768) return;
+
+  var stickyElem = document.querySelector('.stickyContainer');
+  if (!stickyElem) return;
+
+  var offset = 0; // desired top offset when sticky
+  var stickyTop = stickyElem.getBoundingClientRect().top + window.pageYOffset;
+
+  window.addEventListener('scroll', function () {
+	if (window.pageYOffset > stickyTop - offset) {
+	  stickyElem.style.position = 'fixed';
+	  stickyElem.style.marginRight = '-20px';
+	  stickyElem.style.top = offset + 'px';
+	} else {
+	  stickyElem.style.position = 'relative';
+	  stickyElem.style.top = 'initial';
+	}
+  });
+});
+
+	
+	
+	function toggleContent() {
+		var contentWrapper = document.getElementById('description-wrapper');
+		var toggleButton = document.getElementById('toggle-button');
+
+		if (contentWrapper.classList.contains('expanded')) {
+			contentWrapper.classList.remove('expanded');
+			toggleButton.textContent = 'View More';
+		} else {
+			contentWrapper.classList.add('expanded');
+			toggleButton.textContent = 'View Less';
+		}
+	}	
+	
+	function scrollToActiveTab(targetTab, navID) {
+	  // Get the navigation container and target tab elements
+	  var out = document.querySelector(navID);
+	  var tar = out.querySelector(targetTab);
+
+	  if (!out || !tar) return; // Early return if elements are not found
+
+	  var x = out.clientWidth; // Width of the navigation container
+	  var y = tar.offsetWidth; // Width of the target tab, excluding margin
+	  var z = Array.from(out.querySelectorAll('a')).indexOf(tar); // Index of the target tab
+	  var q = 0;
+
+	  // Calculate the sum of widths of all elements before the target tab
+	  var m = out.querySelectorAll('a');
+	  for (var i = 0; i < z; i++) {
+		q += m[i].offsetWidth; // Sum the width of each preceding tab
+	  }
+
+	  // Scroll the container
+	  out.scrollLeft = Math.max(0, q - (x - y) / 2);
+
+	  // Modify the tab to show active
+	  tar.style.backgroundColor = "#337ab7";
+	  tar.style.color = "white";
+	}
+
+
+	scrollToActiveTab('#mobile-tab2', '#mobile-scrollmenu');
+	scrollToActiveTab('#mobile-historical-gold-prices-100-year-chart' , '#mobile-scrollmenusub');	
+
+	
+	
+    var frequencies = {"chart_list":{"Historical Chart":"INDEXMONTHLY","Adjusted for Inflation":"INDEXMONTHLYINFLATION","Annual % Change":"INDEXANNUALCHANGE","Annual Average Price":"INDEXANNUALAVG"}};
+
+
+    var parentContainer = document.getElementById("chart-list-mobile");
+                  
+
+    Object.entries(frequencies.chart_list).forEach(function([key, value], index) {
+		
+        // Create and append the parent chart div
+        var chartPanel = document.createElement("div");
+        chartPanel.id = "chartPanel" + (index + 1); // Append counter to make it unique
+        chartPanel.className = "chart_panel";
+        parentContainer.appendChild(chartPanel);
+
+		// Create and append the panel header element
+        var panelHeaderContainer = document.createElement("div");
+        panelHeaderContainer.className = "chart_panel_header";
+        chartPanel.appendChild(panelHeaderContainer);
+
+        // Create and append the h3 element for the title
+        var titleH2 = document.createElement("h2");
+        titleH2.className = "chart_title";
+        titleH2.textContent = key; // Concatenate chart_title, "|", and key
+        panelHeaderContainer.appendChild(titleH2);
+		        
+        // Create and append the tabs element
+        var tabsContainer = document.createElement("div");
+        tabsContainer.className = "chart_tabs";
+        panelHeaderContainer.appendChild(tabsContainer);
+
+        // Create and append the tabs subelement
+        var tab1 = document.createElement("div");
+		tab1.classList.add('tab', 'tab1', 'active-tab');
+		tab1.setAttribute('data-target1', 'chartContainer' + (index + 1));
+		tab1.setAttribute('data-target2', 'tableContainer' + (index + 1));
+        tabsContainer.appendChild(tab1);
+		
+        // Add chart image to Tab 1
+		var tab1Img = document.createElement('img');
+		tab1Img.src = '/production/global_metrics/images/bar-chart-fill.svg';
+		tab1Img.width = 15; // Set the width (in pixels)
+		tab1Img.height = 15; // Set the height (in pixels)
+		tab1Img.alt = 'Click on chart icon to view chart';		
+		tab1Img.className = 'tab_images'; // Example: Adding a CSS class
+        tab1.appendChild(tab1Img);
+		
+		// Create and append the tabs subelement
+        var tab2 = document.createElement("div");
+		tab2.classList.add('tab', 'tab2');
+		tab2.setAttribute('data-target1', 'tableContainer' + (index + 1));
+		tab2.setAttribute('data-target2', 'chartContainer' + (index + 1));
+        tabsContainer.appendChild(tab2);
+		
+         // Add table image to Tab 2
+		var tab2Img = document.createElement('img');
+		tab2Img.src = '/production/global_metrics/images/table.svg';
+		tab2Img.width = 15; // Set the width (in pixels)
+		tab2Img.height = 15; // Set the height (in pixels)
+		tab2Img.alt = 'Click on table icon to view table';		
+		tab2Img.className = 'tab_images'; // Example: Adding a CSS class
+        tab2.appendChild(tab2Img);		
+		
+        // Create and append the chart div
+        var chartDiv = document.createElement("div");
+		chartDiv.classList.add('lazyload', 'chart_block', 'tab_content');
+        chartDiv.id = "chartContainer" + (index + 1); // Append counter to make it unique
+        chartDiv.setAttribute("data-type", "chart");
+        chartDiv.setAttribute("data-tableid", "tableContainer" + (index + 1));
+        chartDiv.setAttribute("data-frequency", value); // Use value for data-frequency
+        chartPanel.appendChild(chartDiv);
+
+        // Create and append the table div
+        var tableDiv = document.createElement("div");
+		tableDiv.classList.add('lazyload', 'table_block', 'tab_content');
+        tableDiv.id = "tableContainer" + (index + 1); // Append counter to make it unique
+        tableDiv.setAttribute("data-type", "table");
+        tableDiv.setAttribute("data-frequency", value); // Put frequency in as an attribute
+        tableDiv.setAttribute("data-title", key);  // Put title in as an attribute
+        chartPanel.appendChild(tableDiv);
+
+		chartDiv.style.display = 'flex';
+		tableDiv.style.display = 'none';			
+
+        // Create and set content for advertiserDiv based on device type
+        // var advertiserDiv = document.createElement("div");
+        // advertiserDiv.className = "lazyload ad_block_ic";
+        // advertiserDiv.id = "IC_d_300x250_" + (index + 1);
+        // advertiserDiv.setAttribute("data-type", "investing_channel");
+        // parentContainer.appendChild(advertiserDiv); 
+		
+		//Display different Dianomi unit based on position	
+		if(index == 0) {
+			var dianomiUnit = "4004";
+			var DianomiClassName = "lazyload ad_block_dianomi";
+			} else if (index == 1){
+			var dianomiUnit = "4005";
+			var DianomiClassName = "lazyload ad_block_dianomi";
+			} else if (index == 2){
+			var dianomiUnit = "4006";
+			var DianomiClassName = "lazyload ad_block_dianomi";
+			} else if (index == 3){
+			var dianomiUnit = "4007";
+			var DianomiClassName = "lazyload ad_block_dianomi";
+			}
+			
+        // Create and set content for advertiserDiv based on device type
+        var advertiserDiv = document.createElement("div");
+        advertiserDiv.className = DianomiClassName;
+        advertiserDiv.id = "dianomi_300x300_" + (index + 1);
+        advertiserDiv.setAttribute("data-type", "dianomi");
+			
+				
+		advertiserDiv.setAttribute("data-advertiser", dianomiUnit);
+        parentContainer.appendChild(advertiserDiv);  		
+    })
+    </script>		
+	
+
+<script>
+
+	document.querySelectorAll('.tab').forEach(tab => {
+		tab.addEventListener('click', function() {
+			let container = this.closest('.chart_panel'); // Adjusted to the correct container class
+			let contentToShow = container.querySelector('#' + this.getAttribute('data-target1'));
+			let contentToHide = container.querySelector('#' + this.getAttribute('data-target2'));
+			
+			// Remove active-tab class from all tabs in this container
+			container.querySelectorAll('.tab').forEach(tab => {
+				tab.classList.remove('active-tab');
+			});
+
+			// Hide and show content
+			contentToHide.style.display = 'none';
+			contentToShow.style.display = 'flex'; // Ensure this matches your intended display style
+			this.classList.add('active-tab');
+		});
+	});
+
+	
+	document.addEventListener('DOMContentLoaded', (event) => {
+	  // Function to be called when a button is clicked
+	  function buttonClicked(event) {
+		// event.target is the clicked element
+		// event.target.dataset contains all the data attributes of the element
+		const tableTarget = event.target.dataset.target;
+        const container = document.getElementById(tableTarget);
+        container.classList.toggle('expanded');
+        
+        // Update button text based on the state
+        this.textContent = container.classList.contains('expanded') ? 'View Less' : 'View More';
+
+	  }
+	  
+	  // Select all buttons with the class 'my-button' and add a click event listener to each
+	  document.querySelectorAll('.toggleButton').forEach(button => {
+		button.addEventListener('click', buttonClicked);
+	  });
+	});	
+	
+</script>
+
+	<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function showMobileMenu() {
+	  var x = document.getElementById("topNav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	
+	
+/* 	
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {navbarSticky()};
+
+	// Get the navbar
+	var navbar = document.getElementById("top-nav-search-bar");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function navbarSticky() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+		navbar.classList.add("-webkit-sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+		navbar.classList.remove("-webkit-sticky");
+	  }
+	} */
+
+/* document.addEventListener('DOMContentLoaded', function() {
+  // When the event DOMContentLoaded occurs, it is safe to access the DOM
+
+  // When the user scrolls the page, execute myFunction 
+  window.addEventListener('scroll', myFunctionForSticky);
+
+  // Get the navbar
+  var navbar = document.getElementById("sticky-sidebar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. 
+  // Remove "sticky" when you leave the scroll position
+
+  function myFunctionForSticky() {
+    if (window.pageYOffset >= sticky) {
+      console.log("window.pageYOffset >= sticky");
+    } else {
+      console.log("Not window.pageYOffset >= sticky");
+    }
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+})	 */
+
+	
+	</script>		
+
+<script>
+
+	let highchartsLoaded = false;
+	let highchartsLoading = false;
+	let highchartsQueue = [];
+
+	function loadHighcharts(callback) {
+	  if (highchartsLoaded) return callback();
+	  highchartsQueue.push(callback);
+
+	  if (!highchartsLoading) {
+		highchartsLoading = true;
+
+		const scripts = [
+		  '/assets/javascript/highstock.js',
+		  '/assets/javascript/exporting.js',
+		  '/assets/javascript/export-data.js',
+		  '/assets/javascript/accessibility.js'
+		];
+
+		const loadNext = (index) => {
+		  if (index >= scripts.length) {
+			highchartsLoaded = true;
+			highchartsQueue.forEach(cb => cb());
+			highchartsQueue = [];
+			return;
+		  }
+
+		  const script = document.createElement('script');
+		  script.src = scripts[index];
+		  script.async = true;
+		  script.onload = () => loadNext(index + 1);
+		  script.onerror = () => console.error(`Failed to load: ${scripts[index]}`);
+		  document.head.appendChild(script);
+		};
+
+		loadNext(0);
+	  }
+	}
+
+
+if (!!window.IntersectionObserver) {
+    // IntersectionObserver callback
+    const handleIntersect = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+
+                // Use requestIdleCallback if available
+                const loadAsync = window.requestIdleCallback || function (cb) { setTimeout(cb, 0); };
+
+                loadAsync(() => {
+                    if (el.dataset.type === 'chart') {
+                        const targetID = el.id;
+                        const frequency = el.dataset.frequency;
+                        const tableID = el.dataset.tableid;
+
+                        loadHighcharts(() => {
+                            generateChart('1333', '5', frequency, targetID, tableID);
+                        });
+
+                        el.dataset.loaded = 'true';
+                    } else if (el.dataset.type === 'dianomi') {
+                        const newScript = document.createElement("script");
+                        newScript.id = "dianomi_context_script";
+                        newScript.src = "https://www.dianomi.com/js/contextfeed.js";
+                        el.appendChild(newScript);
+
+                        const advertiserID = el.dataset.advertiser;
+                        el.innerHTML += "<div class='dianomi_context' data-dianomi-context-id='" + advertiserID + "'></div>";
+                        el.dataset.loaded = 'true';
+                    }
+
+                    // Delay unobserve to avoid premature removal
+                    setTimeout(() => observer.unobserve(el), 100);
+                });
+            }
+        });
+    };
+
+    // Create the observer
+    const observer = new IntersectionObserver(handleIntersect, {
+        rootMargin: "300px 0px",
+        threshold: 0
+    });
+
+    // Start observing lazyload elements
+    document.querySelectorAll('.lazyload').forEach(div => observer.observe(div));
+
+    // Fallback: check for anything missed after initial page load
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.querySelectorAll('.lazyload').forEach(el => {
+                if (!el.dataset.loaded && el.dataset.type === 'chart') {
+                    loadHighcharts(() => {
+                        generateChart('1333', '5', el.dataset.frequency, el.id, el.dataset.tableid);
+                    });
+                }
+                // Optionally repeat for other ad types if needed
+            });
+        }, 3000);
+    });
+}
+
+
+
+
+function generateChart(pageID, template, chartFrequency, targetDivID, tableID) {
+		
+	var highchartsURL = '/economic-data/' + pageID + '/' + chartFrequency;
+	
+	fetch(highchartsURL)
+	  .then(response => {
+		if (!response.ok) {
+		  throw new Error(`HTTP error: ${response.status}`);
+		}
+		return response.json();
+	  })
+	  .then(remoteData => {
+				
+		var data = remoteData.data;
+		var fieldName = remoteData.metadata.name;
+		var tableHeaderName = remoteData.metadata,tableHeaderName;
+		var chartType = remoteData.metadata.chartType;	
+		var mobileChartType = remoteData.metadata.mobileChartType;	
+		var lineWidth = remoteData.metadata.lineWidth;	
+		var yAxisCurrency = remoteData.metadata.currency;		
+		var yAxisRightLabel = remoteData.metadata.label;		
+		var toolTipDecimals = remoteData.metadata.decimals;
+		var positiveColor = remoteData.metadata.positiveColor;
+		var negativeColor = remoteData.metadata.negativeColor;
+		var tooltipDateFormat = remoteData.metadata.tooltipDateFormat;	
+		var chartScale = remoteData.metadata.chartScale;			
+		var defaultChartFrequency = remoteData.metadata.defaultChartFrequency
+		var seriesUnits = remoteData.metadata.seriesUnits
+		
+		if(defaultChartFrequency == 'D' || chartFrequency == 'INDEXDAILY' || chartFrequency == 'D' || chartFrequency == 'INDEXMONTHLY' || chartFrequency == 'INDEXMONTHLYINFLATION') {
+
+			var navigatorEnabled = true;	
+			var scrollbarEnabled = true;	
+			
+			
+		} else {
+			
+			var navigatorEnabled = false;	
+			var scrollbarEnabled = false;				
+			
+		}
+
+		
+		
+		
+		// split the data set into ohlc and volume
+		var chartData = [],
+			dataLength = data.length,
+
+			i = 0;
+			for (i; i < dataLength; i += 1) {
+				chartData.push([
+					data[i][0], // the date
+					data[i][1], // the value
+				]);		
+			}
+			
+		//console.log(JSON.stringify(percentChange));
+		
+		Highcharts.setOptions({
+			lang: {
+				thousandsSep: ',',
+				decimalPoint: '.',
+				numericSymbols: []
+			}
+		});	
+
+		// Set different range selector buttons depending on the type of chart
+		let rangeSelectorButtons;
+		let rangeOptionSelected;
+
+		if (template == 1 && chartFrequency == 'D') {
+		  rangeSelectorButtons = [
+			{ type: 'year', count: 1, text: '1Y' },
+			{ type: 'year', count: 5, text: '5Y' },
+			{ type: 'year', count: 10, text: '10Y' },
+			{ type: 'year', count: 20, text: '20Y' },
+			{ type: 'year', count: 30, text: '30Y' },
+			{ type: 'all', text: 'All' }
+		  ];
+		  rangeOptionSelected = 6;
+		} else {
+		  // Extract date range
+		  const startDate = new Date(chartData[0][0]);
+		  const endDate = new Date(chartData[chartData.length - 1][0]);
+
+		  // Calculate total span in years
+		  const totalYears = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24 * 365.25));
+
+		  rangeSelectorButtons = [];
+		  
+		  if(defaultChartFrequency == 'D' || chartFrequency == 'DAILYEXCHANGERATE' || chartFrequency == 'D' || chartFrequency == '10YD' ||  chartFrequency == 'INDEXDAILY') {
+			
+			  rangeSelectorButtons.push({ type: 'ytd', count: 1, text: 'YTD' })
+			  if (totalYears >= 1) rangeSelectorButtons.push({ type: 'year', count: 1, text: '1Y' });
+			  if (totalYears >= 5) rangeSelectorButtons.push({ type: 'year', count: 5, text: '5Y' });
+			  if (totalYears >= 10) rangeSelectorButtons.push({ type: 'year', count: 10, text: '10Y' });
+			  if (totalYears >= 20) rangeSelectorButtons.push({ type: 'year', count: 20, text: '20Y' });
+		  
+		} else {
+			
+			  if (totalYears >= 5) rangeSelectorButtons.push({ type: 'year', count: 5, text: '5Y' });
+			  if (totalYears >= 10) rangeSelectorButtons.push({ type: 'year', count: 10, text: '10Y' });
+			  if (totalYears >= 20) rangeSelectorButtons.push({ type: 'year', count: 20, text: '20Y' });
+			  if (totalYears >= 30) rangeSelectorButtons.push({ type: 'year', count: 30, text: '30Y' });
+			  if (totalYears >= 50) rangeSelectorButtons.push({ type: 'year', count: 50, text: '50Y' });
+		  
+		}
+
+		  rangeSelectorButtons.push({ type: 'all', text: 'All' });
+
+		  // Select the last option (usually 'All')
+		  rangeOptionSelected = rangeSelectorButtons.length - 1;
+		}
+
+		
+
+
+		// create the chart
+		chart = Highcharts.stockChart(targetDivID, {
+			
+			chart: {			
+				styledMode: false,
+				animation: false,
+				zoomType: 'x', // Enables drag-to-zoom on X axis
+				style: {
+					
+					fontFamily: 'Roboto, Sans-Serif'
+					
+				},
+				zooming: {
+					mouseWheel: false
+				},
+				events: {
+load: function () {
+    const chart = this;
+
+    const buttonWidth = 50;
+    const buttonHeight = 35;
+    const topOffset = 0;
+    const rightOffset = 5;
+
+    // Create group
+    const dataGroup = chart.renderer.g()
+        .attr({ zIndex: 3 })
+        .translate(chart.chartWidth - buttonWidth - rightOffset, topOffset)
+        .add();
+
+    // Background rectangle
+    chart.renderer.rect(0, 0, buttonWidth, buttonHeight, 5)
+        .attr({
+            fill: '#efefef',
+            stroke: '#ddd',
+            cursor: 'pointer'
+        })
+        .add(dataGroup);
+
+    // Icon
+    chart.renderer.image('/production/global_metrics/images/cloud-download.svg', 15, 8, 20, 20)
+        .attr({ cursor: 'pointer' })
+        .add(dataGroup);
+
+    // Tooltip title
+    const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+    title.textContent = 'Download Data';
+    dataGroup.element.appendChild(title);
+
+    // Click handler
+    dataGroup.on('click', function () {
+        chart.downloadCSV();
+    });
+}
+
+
+				}
+			
+			},
+			credits: {
+				enabled: false // Disable credits to remove "Highcharts" label
+			},							
+			threshold: null,
+			navigator: {
+				enabled: navigatorEnabled
+			},			
+			scrollbar: {
+				enabled: scrollbarEnabled
+			},			
+			loading: {
+				style: {
+					backgroundColor: 'silver'
+				},
+				labelStyle: {
+					color: 'white'
+				}
+			},
+
+			rangeSelector: {
+				title: {
+					text: 'Zoom:'
+				},
+				allButtonsEnabled: true,
+				inputEnabled: false, // Hide date input
+				dropdown: 'never', // Change to `null` if needed
+				buttons: rangeSelectorButtons,
+				buttonTheme: {
+					width: 35
+				},
+				selected: rangeOptionSelected 
+			},	
+			
+			xAxis: [{
+			  labels: {
+				style: {
+				  fontSize: 14
+				},
+				dateTimeLabelFormats: {
+				  millisecond: '%H:%M:%S.%L',
+				  second: '%H:%M:%S',
+				  minute: '%H:%M',
+				  hour: '%H:%M',
+				  day: '%e. %b',
+				  week: '%e. %b',
+				  month: '%b %Y',
+				  year: '%Y'
+				}
+			  }
+			}],
+		
+			yAxis: [{
+			  type: chartScale,
+			  opposite: true, // Explicitly ensures the axis is on the left
+				labels: {
+				  align: 'left',
+				  x: 10,
+					formatter: function () {
+					  const currency = yAxisCurrency || '';
+					  const rightLabel = yAxisRightLabel || '';
+					  const val = this.value;
+					  let formatted;
+
+					  if (Math.abs(val) >= 1e12) {
+						formatted = (val / 1e12).toFixed(3).replace(/\.?0+$/, '') + 'T';
+					  } else if (Math.abs(val) >= 1e9) {
+						formatted = (val / 1e9).toFixed(2).replace(/\.?0+$/, '') + 'B';
+					  } else if (Math.abs(val) >= 1e6) {
+						formatted = (val / 1e6).toFixed(1).replace(/\.?0+$/, '') + 'M';
+					  } else if (Math.abs(val) >= 1e3) {
+						formatted = (val / 1e3).toFixed(1).replace(/\.?0+$/, '') + 'K';
+					  } else {
+						formatted = val.toString();
+					  }
+
+					  return currency + formatted + rightLabel;
+					},
+				  style: {
+					fontSize: '14px',
+					color: '#000'
+				  }
+				},
+			  title: {
+				rotation: 270,          // Horizontal title
+				x: 0,
+				y: -10,
+				style: {
+				  fontSize: '16px',
+				  color: '#000'
+				}
+			  },
+			  lineWidth: 1,
+			  gridLineWidth: 1,
+			  min: null,
+			  max: null,
+			  startOnTick: false,
+			  endOnTick: false,
+			  resize: {
+				enabled: true
+			  }
+			}],
+			tooltip: {
+			  split: true,
+			  useHTML: true,
+			  formatter: function () {
+				const point = this.points?.[0];
+				if (!point) return '';
+
+				const value = point.y;
+				let formattedValue;
+
+				// Dynamic date format
+				let dateFormat;
+				if (defaultChartFrequency == 'D' || chartFrequency === 'DAILYEXCHANGERATE' ||chartFrequency === 'D' || chartFrequency === '10YD' || chartFrequency === 'INDEXDAILY') {
+				  const grouping = point.series?.currentDataGrouping?.unitName;
+				  dateFormat =
+					grouping === 'year' ? '%Y' :
+					grouping === 'month' ? '%b %Y' :
+					grouping === 'week' ? '%b %e, %Y' :
+					grouping === 'day' ? '%b %e, %Y' :
+					'%b %e, %Y';
+				} else if (defaultChartFrequency === 'A') {
+					
+				  dateFormat = '%Y';
+				  
+				} else {
+				  dateFormat = tooltipDateFormat;
+				}
+
+				// Metadata
+				const metadata = point.series.chart.options.metadata || {};
+				const currency = metadata.currency || yAxisCurrency || '';
+				const label = metadata.label || '';
+				const rightLabel = yAxisRightLabel || '';
+
+				const absIntPart = Math.floor(Math.abs(value));
+				const isRawValueLarge = absIntPart >= 100000;
+
+				if(chartFrequency == 'INDEXMONTHLY' || chartFrequency == 'INDEXMONTHLYINFLATION' || chartFrequency == '10YD' || chartFrequency == 'INDEXANNUALAVG') {
+					
+
+					formattedValue = currency + Highcharts.numberFormat(value, 2) + label;					
+
+				} else if(chartFrequency == 'DAILYEXCHANGERATE') {
+
+					formattedValue = Highcharts.numberFormat(value, 4);					
+
+				} else if (label == '%') {
+				  // Percent: 2 decimals
+				  formattedValue = Highcharts.numberFormat(value, 2) + '%';
+
+				} else {
+				  const absVal = Math.abs(value);
+				  const symbol = currency || ''; // '$', '€', or empty
+				  const isCurrency = symbol !== '';
+
+				  if (absVal >= 1e12) {
+					formattedValue = symbol + (value / 1e12).toFixed(3) + 'T';
+				  } else if (absVal >= 1e9) {
+					formattedValue = symbol + (value / 1e9).toFixed(3) + 'B';
+				  } else if (absVal >= 1e6) {
+					formattedValue = symbol + (value / 1e6).toFixed(3) + 'M';
+				  } else if (absVal >= 1e3 && isCurrency) {
+					// Only format thousands with symbol
+					formattedValue = symbol + Highcharts.numberFormat(value, 0, '.', ',');
+				  } else if (absVal >= 1e3) {
+					// For non-currency: 1,234 without symbol
+					formattedValue = Highcharts.numberFormat(value, 0, '.', ',');
+				  } else {
+					// Use dynamic decimals if not large
+					let dynamicDecimals;
+					if (absIntPart === 0) {
+					  dynamicDecimals = 3;
+					} else {
+					  dynamicDecimals = 2;
+					}
+					
+
+					formattedValue =
+					  (isCurrency ? symbol : (yAxisCurrency || '')) +
+					  Highcharts.numberFormat(value, dynamicDecimals) +
+					  (isCurrency ? '' : (rightLabel || ''));
+				  }
+				}
+
+
+				return [
+				  '<b>' + Highcharts.dateFormat(dateFormat, this.x) + '</b>'
+				].concat(
+				  this.points ? this.points.map(() => formattedValue) : []
+				);
+			  },
+
+			  backgroundColor: {
+				linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+				stops: [
+				  [0, 'white'],
+				  [1, '#EEE']
+				]
+			  },
+			  borderColor: 'gray',
+			  borderWidth: 1,
+			  style: {
+				fontSize: 15,
+				fontWeight: 'bold'
+			  }
+			},
+
+			series: [{
+				type: chartType,
+				yAxis: 0, // index matching your yAxis array
+				animation: false,
+				name: fieldName,
+				data: chartData,
+				color: positiveColor,
+				negativeColor: negativeColor
+				
+			}],
+				
+			plotOptions: {
+				line: {
+					lineWidth: lineWidth,
+					marker: {
+						radius: 4,
+						lineColor: positiveColor,
+						lineWidth: 0
+					}
+				},
+				column: {
+					borderRadius: 3,
+					groupPadding:0,
+					borderWidth: 0,
+					stickyTracking: true,
+					dataLabels: {
+						
+						enabled:false
+						
+					}
+				},
+				series: {
+					dataGrouping: {
+					enabled: ['D', 'W', 'BW', 'DAILYEXCHANGERATE', '10YD', 'INDEXDAILY'].includes(defaultChartFrequency) ||
+						   ['D', 'W', 'BW', 'DAILYEXCHANGERATE', '10YD', 'INDEXDAILY'].includes(chartFrequency),
+						forced: true,
+						units: [['day', [1]], ['week', [1]], ['month', [1]], ['year', [1]]],
+						dateTimeLabelFormats: {
+							day: ['%A, %e %b %Y', '%A, %e %b', '-%A, %e %b %Y'],
+							week: ['Week from %A, %e %b %Y', '%A, %e %b', '-%A, %e %b %Y'],
+							month: ['%B %Y', '%B', '-%B %Y'],
+							year: ['%Y', '%B', '%Y']
+						}
+					}
+				}				
+			},
+
+			exporting: {
+				sourceWidth: 800,
+				sourceHeight: 500,
+				scale: 1,
+				showTable: false,
+				filename: (function () {
+					const title = document.querySelector('#container .highcharts-title')?.textContent || 'chart';
+					const timestamp = new Date().toISOString().replace(/[:.-]/g, '').slice(0, 15);
+					return `${title.replace(/\s+/g, '_')}_${timestamp}`;
+				})(),				
+				csv: {
+					dateFormat: '%m/%d/%Y',
+					columnHeaderFormatter: function (item, key) {
+						return key === 'y' ? 'Value' : 'Date';
+					}
+				},				
+				buttons: {
+				  contextButton: {
+					enabled:false,
+					menuItems: ['downloadPNG', 'downloadJPEG', 'downloadPDF', 'downloadSVG', 'downloadCSV'],
+				  },
+				},				
+			},			
+			
+				
+			responsive: {  
+			  rules: [{  
+				condition: {  
+				  maxWidth: 768  
+				},  
+				chartOptions: {
+					chart: {
+					  zoomType: null,
+					  events: {
+						load: function () {
+						  const chart = this;
+						  const points = chart.series[0].points;
+						  const lastPoint = points[points.length - 1];
+
+						  if (lastPoint) {
+							chart.tooltip.refresh(lastPoint);
+							chart.xAxis[0].drawCrosshair(null, lastPoint);
+						  }
+						},
+
+						redraw: function () {
+						  const chart = this;
+						  const points = chart.series[0].points;
+						  const lastPoint = points[points.length - 1];
+
+						  if (lastPoint) {
+							chart.tooltip.refresh(lastPoint);
+							chart.xAxis[0].drawCrosshair(null, lastPoint);
+						  }
+
+						  chart.reflow(); // Force layout recalculation
+						}
+					  }
+					},
+					rangeSelector: {
+						title: {
+							text: 'Zoom:'
+						},
+						allButtonsEnabled: true,
+						inputEnabled: false, // Hide date input
+						dropdown: 'never', // Change to `null` if needed
+						buttons: rangeSelectorButtons,
+						buttonTheme: {
+							width: 30
+						},
+						selected: rangeOptionSelected 
+					},						
+					navigator: {
+						enabled: navigatorEnabled
+					},
+					scrollbar: {
+						enabled: scrollbarEnabled
+					},
+					exporting: { 
+						enabled: false 
+					},				
+					legend: {  
+						enabled: false  
+					},
+					rangeSelector: {
+						selected: 3					
+					},
+					plotOptions: {
+						line: {
+							lineWidth: lineWidth,
+							marker: {
+								radius: 4,
+								lineColor: positiveColor,
+								lineWidth: 0
+							}
+						},
+						bar: {
+							groupPadding:0,
+							borderWidth: 0,
+							stickyTracking: true
+						}						
+					},					
+					series: [{
+						type: mobileChartType,
+						inverted: false,
+						animation: false,
+						line: {
+							lineWidth: 5
+						},
+						name: fieldName,
+						data: chartData,
+						color: positiveColor,
+						negativeColor: negativeColor,
+						dataGrouping: {
+							enabled: ['D', 'W', 'BW', 'DAILYEXCHANGERATE', '10YD', 'INDEXDAILY'].includes(defaultChartFrequency) ||
+								   ['D', 'W', 'BW', 'DAILYEXCHANGERATE', '10YD', 'INDEXDAILY'].includes(chartFrequency),
+							forced: true, // this is key when you want to manually control it
+							units: [['day', [1]], ['week', [1]], ['month', [1]]]
+						}
+					}],
+					xAxis: [{
+						labels: {
+							style: {
+								fontSize: 14
+							}
+						}
+					}],					
+					yAxis: [{
+						opposite: false,
+						maxPadding: 0.25,
+						labels: {
+							align: 'left',
+							x: 3,
+							style: {
+								fontSize: 14
+							}					
+						},
+						title: {
+							text: ''
+						},
+						height: '100%',
+						lineWidth: 1,
+						type: chartScale,
+						min: null, // Allow Highcharts to determine the minimum value
+						max: null, // Allow Highcharts to determine the maximum value
+						startOnTick: false,
+						endOnTick: false,
+						resize: {
+							enabled: true
+						}
+					}],
+					tooltip: {
+					  split: true,
+					  useHTML: true,
+					  formatter() {
+						const point = this.points?.[0];
+						if (!point) return '';
+
+						let s;
+						const value = point.y;
+						const absVal = Math.abs(value);
+						const absIntPart = Math.floor(absVal);
+						const isRawValueLarge = absIntPart >= 100000;
+
+						// Metadata from chart options
+						const metadata = point.series.chart.options.metadata || {};
+						const currency = metadata.currency || yAxisCurrency || '';
+						const label = metadata.label || '';
+						const rightLabel = yAxisRightLabel || '';
+
+						// Date formatting logic
+						if (defaultChartFrequency == 'D' || chartFrequency === 'D' || chartFrequency === '10YD' || chartFrequency === 'INDEXDAILY') {
+						  const grouping = point.series?.currentDataGrouping?.unitName;
+						  const dateFormat =
+							grouping === 'year' ? '%Y' :
+							grouping === 'month' ? '%b %Y' :
+							'%b %e, %Y';
+
+						  s = '<b>' + Highcharts.dateFormat(dateFormat, this.x) + '</b>: ';
+						} else {
+						  s = '<b>' + Highcharts.dateFormat(tooltipDateFormat, this.x) + '</b>: ';
+						}
+
+						// Value formatting logic
+						let formattedValue;
+
+						if (label === '%') {
+						  formattedValue = Highcharts.numberFormat(value, isRawValueLarge ? 0 : 2) + '%';
+
+						} else if (currency === '$' || currency === '€') {
+						  if (absVal >= 1e12) {
+							formattedValue = currency + (value / 1e12).toFixed(3) + 'T';
+						  } else if (absVal >= 1e9) {
+							formattedValue = currency + (value / 1e9).toFixed(3) + 'B';
+						  } else if (absVal >= 1e6) {
+							formattedValue = currency + (value / 1e6).toFixed(3) + 'M';
+						  } else if (absVal >= 1e3) {
+							formattedValue = currency + Highcharts.numberFormat(value, 0, '.', ',');
+						  } else {
+							formattedValue = currency + value.toFixed(3);
+						  }
+
+						} else if (absVal >= 1e12) {
+						  formattedValue = (value / 1e12).toFixed(3) + 'T';
+						} else if (absVal >= 1e9) {
+						  formattedValue = (value / 1e9).toFixed(3) + 'B';
+						} else if (absVal >= 1e6) {
+						  formattedValue = (value / 1e6).toFixed(3) + 'M';
+						} else if (absVal >= 1e3) {
+						  formattedValue = Highcharts.numberFormat(value, 0, '.', ',');
+						} else {
+						  // Default decimals for non-percent, non-currency, non-large values
+						  let dynamicDecimals;
+						  if (absIntPart === 0) {
+							dynamicDecimals = 3;
+						  } else {
+							dynamicDecimals = 2;
+						  }
+						  formattedValue = (currency || yAxisCurrency || '') +
+							Highcharts.numberFormat(value, dynamicDecimals) +
+							(currency ? '' : rightLabel || '');
+						}
+
+						// Combine date and value
+						s += '<b>' + formattedValue + '</b>';
+						return s;
+					  },
+
+					  positioner(labelWidth, labelHeight, point) {
+						const chartWidth = this.chart.chartWidth;
+						let xPosition = point.plotX - (labelWidth / 2);
+						if (xPosition < 0) xPosition = 0;
+						if (xPosition + labelWidth > chartWidth) xPosition = chartWidth - labelWidth - 3;
+
+						return { x: xPosition, y: 0 };
+					  },
+
+					  backgroundColor: {
+						linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+						stops: [[0, 'white'], [1, '#EEE']]
+					  },
+
+					  borderColor: 'gray',
+					  borderWidth: 1,
+
+					  style: {
+						fontSize: 14,
+						fontWeight: 'bold'
+					  }
+					}			
+				}  
+			  }]  
+			}		
+			
+		});
+		
+		
+	function generateTable(data,tableID,template,chartFrequency) {
+		
+		//Reverse the order of the data for table display purposes
+		data.reverse();
+		
+		//Limit the table size to 500 elements so things like daily stock prices don't blow up the browser
+		let limitedData = data.slice(0, 500);
+		
+		var tableContainer = document.getElementById(tableID);
+		// Clear previous table contents if any
+		tableContainer.innerHTML = '';
+
+		var table = document.createElement('table');
+		table.className = 'table'; // Bootstrap 5 table classes
+
+		// Create table header
+		var thead = document.createElement('thead');
+		var headerRow = document.createElement('tr');
+		var headerValue = document.createElement('th');
+		headerValue.setAttribute('colspan', '2');
+				
+		
+		if (chartFrequency == 'D') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Daily Historical Data</p>';
+		} else if (chartFrequency == 'M') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Monthly Historical Data</p>';
+		} else if (chartFrequency == 'INDEXMONTHLY') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Monthly Closing Price</p>';
+		} else if (chartFrequency == 'INDEXMONTHLYINFLATION') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Monthly Closing Price</p><p>Adjusted for Inflation</p>';
+		} else if (chartFrequency == 'INDEXANNUALAVG') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual Average Price</p>';
+		} else if (chartFrequency == 'INDEXANNUALCHANGE') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual Returns</p>';
+		} else if (chartFrequency == 'A') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual Data</p>';
+		} else if (chartFrequency == 'AC' || chartFrequency == 'ANNUALCHANGE') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual % Change</p>';
+		} else if (chartFrequency == 'ANNUALAVG') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual Average</p>';
+		} else if (chartFrequency == 'YTD') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>YTD Daily Prices</p>';
+		} else if (chartFrequency == 'YTDCHANGE') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>YTD % Change</p>';
+		} else if (chartFrequency == 'TRUMPINAUGURATION') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Change Since Taking Office</p>';
+		} else if (chartFrequency == 'TRUMPELECTION') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Change Since Election</p>';
+		} else if (chartFrequency == 'Q') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Quarterly Data</p>';
+		} else if (chartFrequency == 'QC') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Quarterly YOY % Change</p>';
+		} else if (chartFrequency == 'DEFAULT') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Historical Data</p>';
+		} else if (chartFrequency == 'INFLATIONADJUSTED') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Adjusted for Inflation</p>';
+		} else if (chartFrequency == 'ANNUALCHANGE') {
+			headerValue.innerHTML = '<p>Gold Prices</p><p>Annual Change</p>';
+		}
+
+
+			
+			
+		headerRow.appendChild(headerValue);
+		thead.appendChild(headerRow);
+		table.appendChild(thead);
+
+		// Create table body
+		var tbody = document.createElement('tbody');
+
+		limitedData.forEach(function(row) {
+			var tr = document.createElement('tr');
+			var date = new Date(row[0]);
+			var tdDate = document.createElement('td');
+			// Assuming the date is in UNIX timestamp format; adjust formatting as needed
+						
+			if(chartFrequency == 'A' || chartFrequency == 'AC' || chartFrequency == 'ANNUAL' || chartFrequency == 'ANNUALAVG' || chartFrequency == 'ANNUALCHANGE') {
+				
+				tdDate.textContent = Highcharts.dateFormat('%Y', date);
+				
+			} else {
+				
+				tdDate.textContent = Highcharts.dateFormat('%Y-%m-%d', date);
+								
+			}
+			var tdValue = document.createElement('td');
+
+			// New formatting for all other templates
+			let rawValue = row[1];
+			let formattedValue;
+
+
+			formattedValue = Highcharts.numberFormat(rawValue, 2); // 2 decimals
+			
+
+			tdValue.textContent = yAxisCurrency + formattedValue + yAxisRightLabel;
+			
+
+			
+			tr.appendChild(tdDate);
+			tr.appendChild(tdValue);
+			tbody.appendChild(tr);
+		});
+
+		table.appendChild(tbody);
+		tableContainer.appendChild(table);
+	}		
+		
+		//Create the table
+        generateTable(remoteData.data, tableID, template, chartFrequency);
+		
+		//This code activates the tooltip on each chart and moves it to the latest data point
+		const series = chart.series[0];
+		const point = series.points[series.points.length - 1];
+
+		chart.tooltip.refresh(point); // still good for updating tooltip
+		chart.xAxis[0].drawCrosshair(null, point); // explicitly draw crosshair
+		
+		
+		})
+		.catch(error => {
+		console.error("Failed to load data:", error);
+		});
+
+}	
+	
+</script>
+
+<script>
+
+  	// //Only make search bar sticky on mobile
+    // if (window.innerWidth <= 768) {
+	
+		// var stickyElement = document.getElementById('top-nav-search-bar');
+		// var placeholder = document.querySelector('.placeholder');
+		// var stickyHeight = stickyElement.offsetHeight;
+
+		// // Throttling function
+		// function throttle(func, limit) {
+		// var inThrottle;
+		// return function() {
+		  // var args = arguments;
+		  // var context = this;
+		  // if (!inThrottle) {
+			// func.apply(context, args);
+			// inThrottle = true;
+			// setTimeout(function() {
+			  // inThrottle = false;
+			// }, limit);
+		  // }
+		// }
+		// }
+
+		// function makeSticky() {
+		// var scrollTop = window.scrollY;
+		// var anchorPosition = stickyElement.offsetTop - scrollTop;
+
+		// if (anchorPosition <= 0) {
+		  // stickyElement.classList.add('sticky_fixed');
+		  // placeholder.style.display = 'block';
+		  // placeholder.style.height = stickyHeight + 'px';
+		// } else {
+		  // stickyElement.classList.remove('sticky_fixed');
+		  // placeholder.style.display = 'none';
+		  // placeholder.style.height = '0';
+		// }
+		// }
+
+		// window.addEventListener('scroll', throttle(makeSticky, 100)); // Adjust throttle time as needed
+  
+	// }
+ </script>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Bootstrap Bundle JS (includes Popper) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script async data-id="100827248" src="//static.getclicky.com/js"></script>
+
+
+<script async>
+(function() {
+  var pageId = "1333";
+
+  if (!pageId) return;
+
+  // Fire async request to PHP endpoint
+  fetch("/production/economic/increment_views.php?page_id=" + encodeURIComponent(pageId), {
+    method: "POST"
+  }).catch(function(error) {
+    // Optional: silently ignore
+    console.warn("View counter failed", error);
+  });
+})();
+</script>
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9af3abd9af51cf64',t:'MTc2NTk0NTY4MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
